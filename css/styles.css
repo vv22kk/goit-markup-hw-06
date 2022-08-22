@@ -731,6 +731,9 @@ button {
   cursor: pointer;
   outline: none;
   background-color: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-svg {
   fill: currentColor;
@@ -739,6 +742,9 @@ button {
   left: 12px;
   transform: translateY(-50%);
   z-index: -1;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
@@ -806,7 +812,7 @@ button {
   height: 15px;
   border: 2px solid var(--btn-black-color);
   border-radius: 2px;
-  transition: background-color, border-color;
+  transition-property: background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -815,7 +821,7 @@ button {
 }
 .chek-icon {
   fill: transparent;
-  transition: fill;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -836,7 +842,7 @@ button {
   color: var(--btn-back-color);
 }
 .modal-coment {
-  transition: background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -855,7 +861,7 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  transition: background-color, box-shadow;
+  transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 30px;
